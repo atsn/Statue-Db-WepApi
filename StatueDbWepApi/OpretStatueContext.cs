@@ -10,6 +10,7 @@ namespace StatueDbWepApi
         public OpretStatueContext()
             : base("name=OpretStatueContext")
         {
+            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<City> City { get; set; }
